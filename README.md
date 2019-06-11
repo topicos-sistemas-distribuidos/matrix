@@ -3,7 +3,7 @@ Matrix Multiply using hadoop
 
 Features
 ---
-1. Faz a multiplicacao distribuida de uma matriz muito grande
+1. Faz a multiplicacao distribuida de uma matriz muito grande utilizando um cluste do Hadoop com 3 nós (1 nó Master e 2 Slaves).
 
 Roteiro de execução
 ---
