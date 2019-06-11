@@ -44,3 +44,9 @@ Para a execução do my-matrix.sh - O output deverá ser um arquivo com a matriz
 ```
 #hdfs dfs -cat output-MatrixMultiply/part-r-00000
 ```
+
+6. Para visualizar o namenode e os datanodes de um cluster do Hadoop:
+```
+#hdfs dfsadmin -report
+#hdfs getconf -namenodes
+```
