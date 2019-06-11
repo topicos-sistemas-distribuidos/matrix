@@ -15,19 +15,19 @@ Obs: Inicie o hdfs e o yarn. É preciso garantir que o nó master tenha instalad
 
 Para iniciar o Hadoop no master e nos nós slaves:
 ```
-./start-hadoop.sh
+$./start-hadoop.sh
 ```
 Instalação do Git, Vim, e Maven:
 ```
-apt-get update && apt-get install -y git vim maven
+$apt-get update && apt-get install -y git vim maven
 ```
 
-2. Faça o clone desse repositório no nó master.
+2. Faça o clone desse repositório no nó master do cluster do Hadoop.
 ```
-$ git clone https://github.com/topicos-sistemas-distribuidos/matrix.git
+$git clone https://github.com/topicos-sistemas-distribuidos/matrix.git
 ```
 
-3. Execute o script de acordo com a feature compilada
+3. Entre no diretorio matrix e execute o script de acordo com a feature compilada.
 ```
 $./my-matrix.sh -MatrixMultiply
 ```
@@ -37,10 +37,10 @@ Para a execução do my-matrix.sh - O output deverá ser um arquivo com a matriz
 
 4. Para listar os arquivos do HDFS:
 ```
-hdfs dfs -ls
+$hdfs dfs -ls
 ```
 
 5. Para visualizar o arquivo de saida gerado: 
 ```
-hdfs dfs -cat output-MatrixMultiply/part-r-00000
+$hdfs dfs -cat output-MatrixMultiply/part-r-00000
 ```
